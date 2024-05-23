@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/extract_text" method="post" enctype="multipart/form-data">
+        <label for="file_type">File Type:</label>
+        <select name="file_type" id="file_type">
+            <option value="prescription">Prescription</option>
+            <option value="patient_details">Patient Details</option>
+        </select>
+        <br><br>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
